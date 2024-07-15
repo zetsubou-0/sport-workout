@@ -1,0 +1,137 @@
+{
+  "title": "Warm-up",
+  "items": [
+    {
+      "id": "dips",
+      "repetitionIncrement": 12
+    },
+    {
+      "id": "push-ups",
+      "repetitionIncrement": 8
+    },
+    {
+      "id": "triceps-dips",
+      "repetitionIncrement": 10
+    },
+    {
+      "id": "handstand-push-ups",
+      "repetitionIncrement": 40
+    },
+    {
+      "id": "wall-supported-push-ups",
+      "repetitionIncrement": 20
+    },
+    {
+      "id": "wide-arm-push-ups",
+      "repetitionIncrement": 10
+    },
+    {
+      "id": "decline-push-ups",
+      "repetitionIncrement": 15
+    },
+    {
+      "id": "center-gravity-push-ups",
+      "repetitionIncrement": 20
+    },
+    {
+      "id": "diamond-push-ups",
+      "repetitionIncrement": 12
+    },
+    {
+      "id": "kettlebell-push-press",
+      "repetitionIncrement": 7
+    },
+    {
+      "id": "front-arm-raises",
+      "repetitionIncrement": 5
+    },
+    {
+      "id": "side-arm-raises",
+      "repetitionIncrement": 4
+    },
+    {
+      "id": "resistance-band-bicep-curls",
+      "repetitionIncrement": 7
+    },
+    {
+      "id": "body-row",
+      "repetitionIncrement": 6
+    },
+    {
+      "id": "superman",
+      "repetitionIncrement": 7
+    },
+    {
+      "id": "upright-row",
+      "repetitionIncrement": 5
+    },
+    {
+      "id": "dumbbell-bicep-curls",
+      "repetitionIncrement": 10
+    },
+    {
+      "id": "triceps-kickbacks",
+      "repetitionIncrement": 5
+    },
+    {
+      "id": "wrist-curls",
+      "repetitionIncrement": 5
+    },
+    {
+      "id": "reverse-wrist-curls",
+      "repetitionIncrement": 5
+    },
+    {
+      "id": "squats",
+      "repetitionIncrement": 5
+    },
+    {
+      "id": "wide-stance-squats",
+      "repetitionIncrement": 5
+    },
+    {
+      "id": "bulgarian-split-squats",
+      "repetitionIncrement": 10
+    },
+    {
+      "id": "calf-raises",
+      "repetitionIncrement": 6
+    },
+    {
+      "id": "stomach-vacuum",
+      "repeatCount": 4
+    },
+    {
+      "id": "crunches",
+      "repetitionIncrement": 8
+    },
+    {
+      "id": "side-crunches",
+      "repetitionIncrement": 20
+    },
+    {
+      "id": "rotation-bicycle-crunches",
+      "repetitionIncrement": 10
+    },
+    {
+      "id": "russian-twists",
+      "repetitionIncrement": 10
+    },
+    {
+      "id": "reach-for-toes",
+      "repetitionIncrement": 15
+    },
+    {
+      "id": "bicycle-crunches",
+      "repetitionIncrement": 5
+    },
+    {
+      "id": "scissor-kicks",
+      "repetitionIncrement": 6
+    },
+    {
+      "id": "plank",
+      "durationIncrement": 2
+    }
+  ]
+}

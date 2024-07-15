@@ -1,0 +1,92 @@
+[
+  {
+    "key": "pectoral",
+    "title": "muscle.pectoral.title",
+    "description": "muscle.pectoral.description"
+  },
+  {
+    "key": "triceps",
+    "title": "muscle.triceps.title",
+    "description": "muscle.triceps.description"
+  },
+  {
+    "key": "deltoids",
+    "title": "muscle.deltoids.title",
+    "description": "muscle.deltoids.description"
+  },
+  {
+    "key": "biceps",
+    "title": "muscle.biceps.title",
+    "description": "muscle.biceps.description"
+  },
+  {
+    "key": "latissimus-dorsi",
+    "title": "muscle.latissimus-dorsi.title",
+    "description": "muscle.latissimus-dorsi.description"
+  },
+  {
+    "key": "erector-spinae",
+    "title": "muscle.erector-spinae.title",
+    "description": "muscle.erector-spinae.description"
+  },
+  {
+    "key": "trapezius",
+    "title": "muscle.trapezius.title",
+    "description": "muscle.trapezius.description"
+  },
+  {
+    "key": "forearms",
+    "title": "muscle.forearms.title",
+    "description": "muscle.forearms.description"
+  },
+  {
+    "key": "quadriceps",
+    "title": "muscle.quadriceps.title",
+    "description": "muscle.quadriceps.description"
+  },
+  {
+    "key": "inner-thighs",
+    "title": "muscle.inner-thighs.title",
+    "description": "muscle.inner-thighs.description"
+  },
+  {
+    "key": "glutes",
+    "title": "muscle.glutes.title",
+    "description": "muscle.glutes.description"
+  },
+  {
+    "key": "calf-raises",
+    "title": "muscle.calf-raises.title",
+    "description": "muscle.calf-raises.description"
+  },
+  {
+    "key": "calves",
+    "title": "muscle.calves.title",
+    "description": "muscle.calves.description"
+  },
+  {
+    "key": "transverse-abdominis",
+    "title": "muscle.transverse-abdominis.title",
+    "description": "muscle.transverse-abdominis.description"
+  },
+  {
+    "key": "rectus-abdominis",
+    "title": "muscle.rectus-abdominis.title",
+    "description": "muscle.rectus-abdominis.description"
+  },
+  {
+    "key": "obliques",
+    "title": "muscle.obliques.title",
+    "description": "muscle.obliques.description"
+  },
+  {
+    "key": "core",
+    "title": "muscle.core.title",
+    "description": "muscle.core.description"
+  },
+  {
+    "key": "hip-flexors",
+    "title": "muscle.hip-flexors.title",
+    "description": "muscle.hip-flexors.description"
+  }
+]

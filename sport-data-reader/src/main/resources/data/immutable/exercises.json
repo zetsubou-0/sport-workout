@@ -1,0 +1,298 @@
+[
+  {
+    "key": "dips",
+    "title": "exercise.dips.title",
+    "description": "exercise.dips.description",
+    "muscleGroups": [
+      "triceps",
+      "pectoral",
+      "deltoids"
+    ]
+  },
+  {
+    "key": "push-ups",
+    "title": "exercise.push-ups.title",
+    "description": "exercise.push-ups.description",
+    "muscleGroups": [
+      "pectoral",
+      "triceps",
+      "deltoids"
+    ]
+  },
+  {
+    "key": "triceps-dips",
+    "title": "exercise.triceps-dips.title",
+    "description": "exercise.triceps-dips.description",
+    "muscleGroups": [
+      "triceps",
+      "pectoral",
+      "deltoids"
+    ]
+  },
+  {
+    "key": "handstand-push-ups",
+    "title": "exercise.handstand-push-ups.title",
+    "description": "exercise.handstand-push-ups.description",
+    "muscleGroups": [
+      "deltoids",
+      "triceps",
+      "core"
+    ]
+  },
+  {
+    "key": "wall-supported-push-ups",
+    "title": "exercise.wall-supported-push-ups.title",
+    "description": "exercise.wall-supported-push-ups.description",
+    "muscleGroups": [
+      "deltoids",
+      "triceps",
+      "core"
+    ]
+  },
+  {
+    "key": "wide-arm-push-ups",
+    "title": "exercise.wide-arm-push-ups.title",
+    "description": "exercise.wide-arm-push-ups.description",
+    "muscleGroups": [
+      "pectoral",
+      "triceps",
+      "deltoids"
+    ]
+  },
+  {
+    "key": "decline-push-ups",
+    "title": "exercise.decline-push-ups.title",
+    "description": "exercise.decline-push-ups.description",
+    "muscleGroups": [
+      "pectoral",
+      "triceps",
+      "deltoids"
+    ]
+  },
+  {
+    "key": "diamond-push-ups",
+    "title": "exercise.diamond-push-ups.title",
+    "description": "exercise.diamond-push-ups.description",
+    "muscleGroups": [
+      "triceps",
+      "pectoral",
+      "deltoids"
+    ]
+  },
+  {
+    "key": "kettlebell-push-press",
+    "title": "exercise.kettlebell-push-press.title",
+    "description": "exercise.kettlebell-push-press.description",
+    "muscleGroups": [
+      "deltoids",
+      "triceps",
+      "core"
+    ]
+  },
+  {
+    "key": "front-arm-raises",
+    "title": "exercise.front-arm-raises.title",
+    "description": "exercise.front-arm-raises.description",
+    "muscleGroups": [
+      "deltoids"
+    ]
+  },
+  {
+    "key": "side-arm-raises",
+    "title": "exercise.side-arm-raises.title",
+    "description": "exercise.side-arm-raises.description",
+    "muscleGroups": [
+      "deltoids"
+    ]
+  },
+  {
+    "key": "resistance-band-bicep-curls",
+    "title": "exercise.resistance-band-bicep-curls.title",
+    "description": "exercise.resistance-band-bicep-curls.description",
+    "muscleGroups": [
+      "biceps"
+    ]
+  },
+  {
+    "key": "body-row",
+    "title": "exercise.body-row.title",
+    "description": "exercise.body-row.description",
+    "muscleGroups": [
+      "latissimus-dorsi",
+      "biceps"
+    ]
+  },
+  {
+    "key": "superman",
+    "title": "exercise.superman.title",
+    "description": "exercise.superman.description",
+    "muscleGroups": [
+      "erector-spinae"
+    ]
+  },
+  {
+    "key": "upright-row",
+    "title": "exercise.upright-row.title",
+    "description": "exercise.upright-row.description",
+    "muscleGroups": [
+      "deltoids",
+      "trapezius"
+    ]
+  },
+  {
+    "key": "dumbbell-bicep-curls",
+    "title": "exercise.dumbbell-bicep-curls.title",
+    "description": "exercise.dumbbell-bicep-curls.description",
+    "muscleGroups": [
+      "biceps"
+    ]
+  },
+  {
+    "key": "triceps-kickbacks",
+    "title": "exercise.triceps-kickbacks.title",
+    "description": "exercise.triceps-kickbacks.description",
+    "muscleGroups": [
+      "triceps"
+    ]
+  },
+  {
+    "key": "wrist-curls",
+    "title": "exercise.wrist-curls.title",
+    "description": "exercise.wrist-curls.description",
+    "muscleGroups": [
+      "forearms"
+    ]
+  },
+  {
+    "key": "reverse-wrist-curls",
+    "title": "exercise.reverse-wrist-curls.title",
+    "description": "exercise.reverse-wrist-curls.description",
+    "muscleGroups": [
+      "forearms"
+    ]
+  },
+  {
+    "key": "squats",
+    "title": "exercise.squats.title",
+    "description": "exercise.squats.description",
+    "muscleGroups": [
+      "quadriceps",
+      "glutes"
+    ]
+  },
+  {
+    "key": "wide-stance-squats",
+    "title": "exercise.wide-stance-squats.title",
+    "description": "exercise.wide-stance-squats.description",
+    "muscleGroups": [
+      "quadriceps",
+      "inner-thighs",
+      "glutes"
+    ]
+  },
+  {
+    "key": "bulgarian-split-squats",
+    "title": "exercise.bulgarian-split-squats.title",
+    "description": "exercise.bulgarian-split-squats.description",
+    "muscleGroups": [
+      "quadriceps",
+      "glutes"
+    ]
+  },
+  {
+    "key": "calf-raises",
+    "title": "exercise.calf-raises.title",
+    "description": "exercise.calf-raises.description",
+    "muscleGroups": [
+      "calves"
+    ]
+  },
+  {
+    "key": "stomach-vacuum",
+    "title": "exercise.stomach-vacuum.title",
+    "description": "exercise.stomach-vacuum.description",
+    "muscleGroups": [
+      "transverse-abdominis"
+    ]
+  },
+  {
+    "key": "crunches",
+    "title": "exercise.crunches.title",
+    "description": "exercise.crunches.description",
+    "muscleGroups": [
+      "rectus-abdominis"
+    ]
+  },
+  {
+    "key": "side-crunches",
+    "title": "exercise.side-crunches.title",
+    "description": "exercise.side-crunches.description",
+    "muscleGroups": [
+      "obliques"
+    ]
+  },
+  {
+    "key": "rotation-bicycle-crunches",
+    "title": "exercise.rotation-bicycle-crunches.title",
+    "description": "exercise.rotation-bicycle-crunches.description",
+    "muscleGroups": [
+      "rectus-abdominis",
+      "obliques"
+    ]
+  },
+  {
+    "key": "russian-twists",
+    "title": "exercise.russian-twists.title",
+    "description": "exercise.russian-twists.description",
+    "muscleGroups": [
+      "rectus-abdominis",
+      "obliques",
+      "hip-flexors"
+    ]
+  },
+  {
+    "key": "bicycle-crunches",
+    "title": "exercise.bicycle-crunches.title",
+    "description": "exercise.bicycle-crunches.description",
+    "muscleGroups": [
+      "rectus-abdominis",
+      "obliques"
+    ]
+  },
+  {
+    "key": "plank",
+    "title": "exercise.plank.title",
+    "description": "exercise.plank.description",
+    "muscleGroups": [
+      "core"
+    ]
+  },
+  {
+    "key": "reach-for-toes",
+    "title": "exercise.reach-for-toes.title",
+    "description": "exercise.reach-for-toes.description",
+    "muscleGroups": [
+      "rectus-abdominis",
+      "obliques"
+    ]
+  },
+  {
+    "key": "scissor-kicks",
+    "title": "exercise.scissor-kicks.title",
+    "description": "exercise.scissor-kicks.description",
+    "muscleGroups": [
+      "rectus-abdominis",
+      "obliques"
+    ]
+  },
+  {
+    "key": "center-gravity-push-ups",
+    "title": "exercise.center-gravity-push-ups.title",
+    "description": "exercise.center-gravity-push-ups.description",
+    "muscleGroups": [
+      "triceps",
+      "deltoids",
+      "pectoral"
+    ]
+  }
+]
