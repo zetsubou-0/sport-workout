@@ -1,0 +1,25 @@
+h1 {
+  margin-left: 40rem;
+}
+
+.exercise-items-block {
+  list-style: none;
+}
+
+.exercise-item {
+  display: flex;
+  margin: 1rem;
+}
+
+.exercise-checkbox {
+  margin: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  font-size: 20px;
+  color: green;
+}

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: sport-web
+
+sport:
+  workout:
+    name: warm-up
+    locale: en
+    counter: 113
