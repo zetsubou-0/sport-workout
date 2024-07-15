@@ -2,7 +2,7 @@ package com.zetsubou_0.sport.ui.web.sportweb.dto
 
 import com.zetsubou_0.sport.core.model.ProgramItem
 
-class ExercisesDto(val programItems: List<ProgramItem>) {
+class ExercisesDto(programItems: List<ProgramItem>) {
 
     val items: List<ExercisesDtoItem> = programItems.map { ExercisesDtoItem(
         it.exercise.title,
