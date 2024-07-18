@@ -4,9 +4,8 @@
 <ul class="exercise-items-block">
     {{#items}}
         <li class="exercise-item">
-            <input type="checkbox" class="exercise-checkbox"/>
             <div class="exercise-item-container">
-                <h4 class="title">{{title}} {{muscleGroups}}<br/>{{description}}</h4>
+                <h4 class="title">{{title}} {{muscleGroups}}<br/><br/><span class="description">{{description}}</span></h4>
                 {{#hasCount}}
                     <div class="exercise-data">Count: {{count}}</div>
                 {{/hasCount}}
