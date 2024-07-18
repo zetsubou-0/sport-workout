@@ -4,6 +4,7 @@ spring:
 
 sport:
   workout:
-    name: warm-up
-    locale: en
-    counter: 113
+    name: "${SPORT.WORKOUT.NAME}"
+    locale: "${SPORT.WORKOUT.LOCALE}"
+    counter: "${SPORT.WORKOUT.COUNTER}"
+    source: "${SPORT.WORKOUT.SOURCE}"

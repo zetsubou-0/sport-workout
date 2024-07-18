@@ -1,6 +1,7 @@
 package com.zetsubou_0.sport.ui.web.sportweb.adapter
 
 import com.zetsubou_0.sport.core.model.ProgramParameters
+import com.zetsubou_0.sport.core.service.DataReader
 import com.zetsubou_0.sport.core.service.ProgramParametersAdapter
 import com.zetsubou_0.sport.ui.web.sportweb.service.ConfigurationService
 import org.springframework.stereotype.Service
@@ -13,6 +14,7 @@ class ConfigurationProgramParametersAdapter : ProgramParametersAdapter<Configura
             name = parameters.name,
             locale = Locale.of(parameters.locale),
             counter = parameters.counter,
+            source = DataReader.ReaderType.valueOf(parameters.source.uppercase())
         )
     }
 }

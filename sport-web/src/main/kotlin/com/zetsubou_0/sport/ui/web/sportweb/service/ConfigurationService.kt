@@ -8,5 +8,6 @@ class ConfigurationService (
     @Value("\${sport.workout.name:}") val name: String,
     @Value("\${sport.workout.locale:}") val locale: String,
     @Value("\${sport.workout.counter:}") val counter: Int,
+    @Value("\${sport.workout.source:}") val source: String,
 ) {
 }

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping
 class ExercisesController(val appDataService: AppDataService) {
 
     @GetMapping(
-        "/exercises"
+        "/"
     )
     fun exercises(model: Model): String {
         val appData = appDataService.getAppData()

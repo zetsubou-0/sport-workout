@@ -1,7 +1,14 @@
 package com.zetsubou_0.sport.core.service
 
-import com.zetsubou_0.sport.core.model.AppData
+interface DataReader {
+    fun <T, R> read(config: ReaderConfig<T>): R?
 
-interface DataReader<T> {
-    fun read(programParametersAdapter: ProgramParametersAdapter<T>, parameters: T): AppData?
+    data class ReaderConfig<T> (
+        val source: T,
+        val modelType: Any,
+    )
+
+    enum class ReaderType {
+        FILE, DB;
+    }
 }
