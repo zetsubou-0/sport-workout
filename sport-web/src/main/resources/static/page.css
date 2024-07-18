@@ -54,3 +54,8 @@ h1 {
 .success .description {
   display: none;
 }
+
+.exercise-data {
+  font-size: 20px;
+  font-weight: bold;
+}
