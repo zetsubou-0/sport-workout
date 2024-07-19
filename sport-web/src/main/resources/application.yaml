@@ -5,6 +5,6 @@ spring:
 sport:
   workout:
     name: "${SPORT.WORKOUT.NAME}"
-    locale: "${SPORT.WORKOUT.LOCALE}"
-    counter: "${SPORT.WORKOUT.COUNTER}"
-    source: "${SPORT.WORKOUT.SOURCE}"
+    locale: "${SPORT.WORKOUT.LOCALE:en}"
+    counter: "${SPORT.WORKOUT.COUNTER:0}"
+    source: "${SPORT.WORKOUT.SOURCE:file}"
