@@ -9,9 +9,6 @@ export function ExerciseItem({item}) {
         text: string,
     }
 
-    const [hiddenClass, setHiddenClass] = useState('')
-    const [successClass, setSuccessClass] = useState('')
-
     function handleExerciseItem() {
         uiService.switchClass({
             stateHandler: [hiddenClass, setHiddenClass],
@@ -23,27 +20,27 @@ export function ExerciseItem({item}) {
         })
     }
 
-    function buildDataRows(data: DataRow[]) {
-        return data.map(({data, text}) => {
-            if (data) {
-                return <div className={`exercise-data ${hiddenClass}`}>{text}: {data}</div>
-            }
-        })
-    }
+    const [hiddenClass, setHiddenClass] = useState('')
+    const [successClass, setSuccessClass] = useState('')
 
-    const elClass = `exercise-item ${successClass}`
-    const muscleGroups = `[${item.muscleGroups.join(', ')}]`
-    const dataRows = buildDataRows([
+    const dataRowsInfo = [
         {data: item.count, text: 'Count'},
         {data: item.repeatCount, text: 'Repeat Count'},
         {data: item.duration, text: 'Duration'},
-    ])
+    ]
+
+    const elClass = `exercise-item ${successClass}`
+    const muscleGroups = `[${item.muscleGroups.join(', ')}]`
 
     return <li className={elClass} onClick={handleExerciseItem}>
         <div className="exercise-item-container">
             <h4 className="title">{item.title} {muscleGroups}<br/><br/><span
                 className="description">{item.description}</span></h4>
-            {dataRows}
+            {dataRowsInfo.map(({data, text}) => {
+                if (data) {
+                    return (<div className={`exercise-data ${hiddenClass}`}>{text}: {data}</div>)
+                }
+            })}
         </div>
     </li>
 }
