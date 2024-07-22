@@ -4,11 +4,6 @@ import {useState} from "react";
 
 export function ExerciseItem({item}) {
 
-    type DataRow = {
-        data: number,
-        text: string,
-    }
-
     function handleExerciseItem() {
         uiService.switchClass({
             stateHandler: [hiddenClass, setHiddenClass],
