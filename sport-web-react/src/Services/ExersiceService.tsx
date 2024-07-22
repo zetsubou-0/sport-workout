@@ -19,9 +19,13 @@ export interface IExerciseItemData {
 }
 
 class ExerciseService {
-    async getExercises(): Promise<IExerciseData> {
-        return await restService.perform('exercises.json', RequestType.get)
+    async getExercises(name: string, counter: string): Promise<IExerciseData> {
+        return await restService.perform(`exercises/${name}.json?counter=${counter}`, RequestType.get)
             .then(response => response as IExerciseData)
+    }
+
+    getSearchParam(key: string): string {
+        return new URLSearchParams(document.location.search).get(key)
     }
 }
 

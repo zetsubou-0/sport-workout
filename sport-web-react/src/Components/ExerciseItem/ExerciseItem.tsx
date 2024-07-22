@@ -1,9 +1,7 @@
 import './ExerciseItem.scss'
-import {IExerciseItemData} from "../../Services/ExersiceService.tsx";
-import PropTypes from 'prop-types';
 import {useEffect, useState} from "react";
 
-export function ExerciseItem({ item }) {
+export function ExerciseItem({item}) {
 
     const [hiddenClass, setHiddenClass] = useState('')
     const [successClass, setSuccessClass] = useState('')
@@ -12,15 +10,16 @@ export function ExerciseItem({ item }) {
         switchClass({
             getFn: hiddenClass,
             setFn: setHiddenClass,
+            switchStateClass: 'hidden',
         })
         switchClass({
             getFn: successClass,
             setFn: setSuccessClass,
-            secondStateClass: 'success'
+            switchStateClass: 'success'
         })
     }
 
-    function switchClass({ getFn, setFn, defaultStateClass = '', secondStateClass: switchStateClass = 'hidden' }) {
+    function switchClass({getFn, setFn, defaultStateClass = '', switchStateClass = ''}) {
         if (getFn === switchStateClass) {
             setFn(defaultStateClass)
         } else {
@@ -38,9 +37,12 @@ export function ExerciseItem({ item }) {
     const repeatCount = buildDataRow(item.repeatCount, 'Repeat Count')
     const duration = buildDataRow(item.duration, 'Duration')
     const elClass = `exercise-item ${successClass}`
+    const muscleGroups = `[${item.muscleGroups.join(', ')}]`
+
     return <li className={elClass} onClick={handleExerciseItem}>
         <div className="exercise-item-container">
-            <h4 className="title">{item.title} {item.muscleGroups}<br/><br/><span className="description">{item.description}</span></h4>
+            <h4 className="title">{item.title} {muscleGroups}<br/><br/><span
+                className="description">{item.description}</span></h4>
             {count}
             {repeatCount}
             {duration}

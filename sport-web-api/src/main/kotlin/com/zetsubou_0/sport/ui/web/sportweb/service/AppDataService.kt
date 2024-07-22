@@ -11,7 +11,17 @@ class AppDataService(
     var adapter: ProgramParametersAdapter<ConfigurationService>,
 ) {
     fun getAppData(): AppData? {
+        return getAppData(null, null)
+    }
+
+    fun getAppData(exerciseName: String?, counter: Int?): AppData? {
         val programParameters = adapter.adapt(configurationService)
+        if (exerciseName != null) {
+            programParameters?.name = exerciseName
+        }
+        if (counter != null) {
+            programParameters?.counter = counter
+        }
         return AppReader().readApp(programParameters)
     }
 }

@@ -8,7 +8,9 @@ export function Exercise() {
 
     useEffect(() => {
         async function updateExercises() {
-            const exerciseData = await exerciseService.getExercises()
+            const exerciseName = exerciseService.getSearchParam('exerciseName')
+            const counter = exerciseService.getSearchParam('counter')
+            const exerciseData = await exerciseService.getExercises(exerciseName, counter)
             setExercise(exerciseData)
         }
 

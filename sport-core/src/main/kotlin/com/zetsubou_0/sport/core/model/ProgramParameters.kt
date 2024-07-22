@@ -5,7 +5,7 @@ import de.comahe.i18n4k.Locale
 
 data class ProgramParameters(
     var name: String,
-    val locale: Locale = Locale.ENGLISH,
-    val counter: Int = 0,
+    var locale: Locale = Locale.ENGLISH,
+    var counter: Int = 0,
     var source: DataReader.ReaderType = DataReader.ReaderType.FILE,
 )
