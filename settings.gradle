@@ -1,2 +1,2 @@
 rootProject.name = "workout"
-include("sport-core", "sport-data-reader", "sport-console-ui", "sport-web")
+include("sport-core", "sport-data-reader", "sport-console-ui", "sport-web-api")
