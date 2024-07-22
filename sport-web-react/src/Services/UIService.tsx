@@ -1,5 +1,5 @@
-function UIService() {
-    function switchClass({stateHandler = [], defaultStateClass = '', switchStateClass = ''}) {
+class UIService {
+    switchClass({stateHandler = [], defaultStateClass = '', switchStateClass = ''})  {
         const [getFn, setFn] = stateHandler
         if (getFn === switchStateClass) {
             setFn(defaultStateClass)
