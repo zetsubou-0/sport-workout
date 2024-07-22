@@ -1,5 +1,6 @@
 import './ExerciseItem.scss'
-import {useEffect, useState} from "react";
+import uiService from "../../Services/UIService.tsx";
+import {useState} from "react";
 
 export function ExerciseItem({item}) {
 
@@ -7,25 +8,16 @@ export function ExerciseItem({item}) {
     const [successClass, setSuccessClass] = useState('')
 
     function handleExerciseItem() {
-        switchClass({
-            getFn: hiddenClass,
-            setFn: setHiddenClass,
+        uiService.switchClass({
+            stateHandler: [hiddenClass, setHiddenClass],
             switchStateClass: 'hidden',
         })
-        switchClass({
-            getFn: successClass,
-            setFn: setSuccessClass,
+        uiService.switchClass({
+            stateHandler: [successClass, setSuccessClass],
             switchStateClass: 'success'
         })
     }
 
-    function switchClass({getFn, setFn, defaultStateClass = '', switchStateClass = ''}) {
-        if (getFn === switchStateClass) {
-            setFn(defaultStateClass)
-        } else {
-            setFn(switchStateClass)
-        }
-    }
 
     function buildDataRow(data: number, text: string) {
         if (data) {
