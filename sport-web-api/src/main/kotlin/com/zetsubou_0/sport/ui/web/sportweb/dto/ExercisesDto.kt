@@ -7,14 +7,19 @@ class ExercisesDto(
     val locale: String?,
     programItems: List<ProgramItem>
 ) {
-    val items: List<ExercisesDtoItem> = programItems.map { ExercisesDtoItem(
-        it.exercise.title,
-        it.exercise.description,
-        it.exercise.muscleGroups.map { it.title }.filterNotNull(),
-        it.count,
-        it.repeatCount,
-        it.duration,
-    ) }
+    val items: List<ExercisesDtoItem> = programItems.map(this::createDtoFromItem)
+
+    private fun createDtoFromItem(programItem: ProgramItem): ExercisesDtoItem {
+        return ExercisesDtoItem(
+            programItem.exercise.title,
+            programItem.exercise.description,
+            programItem.exercise.muscleGroups.map { it.title }.filterNotNull(),
+            programItem.count,
+            programItem.repeatCount,
+            programItem.duration,
+            if (programItem.cycle != null) programItem.cycle?.map(this::createDtoFromItem) else listOf()
+        )
+    }
 
     data class ExercisesDtoItem(
         val title: String?,
@@ -23,5 +28,6 @@ class ExercisesDto(
         val count: Int,
         val repeatCount: Int,
         val duration: Int,
+        val cycle: List<ExercisesDtoItem>?,
     )
 }

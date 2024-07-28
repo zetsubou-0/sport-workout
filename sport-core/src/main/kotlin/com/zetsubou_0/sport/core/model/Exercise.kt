@@ -5,4 +5,8 @@ data class Exercise (
     override var title: String?,
     override var description: String?,
     var muscleGroups: List<MuscleGroup>,
-) : Describable
+) : Describable {
+    companion object {
+        fun cycleExercise() = Exercise("", null, null, listOf())
+    }
+}

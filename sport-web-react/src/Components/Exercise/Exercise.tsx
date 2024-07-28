@@ -1,7 +1,7 @@
 import "./Exercise.scss"
-import {ExerciseItem} from "../ExerciseItem/ExerciseItem.tsx";
 import exerciseService, {IExerciseData} from "../../Services/ExersiceService.tsx";
 import {useEffect, useState} from "react";
+import {ExerciseBlock} from "../ExerciseBlock/ExerciseBlock.tsx";
 
 export function Exercise() {
     const [exercise, setExercise] = useState(null as IExerciseData)
@@ -22,7 +22,7 @@ export function Exercise() {
     return <div className={'Exercise'}>
         <h1>{exercise?.title}</h1>
         <ul className="exercise-items-block">
-            {exercise?.items?.filter(item => item).map(item => <ExerciseItem item={item} />)}
+            {exercise?.items?.filter(item => item).map(item => <ExerciseBlock item={item} />)}
         </ul>
     </div>
 }

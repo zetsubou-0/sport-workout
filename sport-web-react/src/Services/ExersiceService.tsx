@@ -11,11 +11,9 @@ export interface IExerciseItemData {
     description?: string
     muscleGroups: string[]
     count: number
-    hasCount: boolean
     repeatCount: number
-    hasRepeatCount: boolean
     duration: number
-    hasDuration: boolean
+    cycle?: IExerciseItemData[]
 }
 
 class ExerciseService {

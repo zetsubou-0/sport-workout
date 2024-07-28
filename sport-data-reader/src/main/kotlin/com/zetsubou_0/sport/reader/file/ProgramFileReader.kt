@@ -35,7 +35,6 @@ class ProgramFileReader (
         exercises: Map<String, FileExercise>,
         muscleGroups: Map<String, MuscleGroup>
     ): ProgramItem? {
-        val exercise = createExercise(fileProgramItem.id, exercises, muscleGroups) ?: return null
         var count = 0
         if (fileProgramItem.repetitionIncrement > 0) {
             count = programParameters.counter.floorDiv(fileProgramItem.repetitionIncrement)
@@ -46,6 +45,8 @@ class ProgramFileReader (
         }
         val cycles =
             fileProgramItem.cycle?.map { createItem(programParameters, it, exercises, muscleGroups) }?.filterNotNull()
+        val exercise = if (cycles != null) Exercise.cycleExercise()
+            else createExercise(fileProgramItem.id, exercises, muscleGroups) ?: return null
         return ProgramItem(
             exercise,
             count,

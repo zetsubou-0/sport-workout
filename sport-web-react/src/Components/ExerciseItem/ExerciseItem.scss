@@ -4,15 +4,15 @@
   width: 29%;
   min-height: 14rem;
   margin: 0.5rem;
-  color: white;
-  background-color: rgb(240, 10, 10);
+  background-color: bisque;
+  color: black;
   border: 0.2rem solid black;
   border-radius: 2rem;
   padding: 1rem;
   cursor: pointer;
 
   &:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: blanchedalmond;
   }
 }
 
@@ -22,6 +22,7 @@
 
 .success {
   background-color: rgb(0, 128, 0);
+  color: white;
   .exercise-data,
   .description {
     display: none;
