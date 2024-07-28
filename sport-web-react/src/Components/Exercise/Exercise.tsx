@@ -26,7 +26,7 @@ export function Exercise() {
         <h1>{exercise?.title}</h1>
         <ul className="exercise-items-block">
             {exercise?.items?.filter(item => item).map(item => <ExerciseBlock item={item} />)}
+            <FinishExercise/>
         </ul>
-        <FinishExercise/>
     </div>
 }

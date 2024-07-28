@@ -1,18 +1,36 @@
 .exercise-item {
   display: inline-flex;
-  max-width: 500px;
-  width: 29%;
+  width: 21%;
   min-height: 14rem;
   margin: 0.5rem;
   background-color: bisque;
   color: black;
   border: 0.2rem solid black;
   border-radius: 2rem;
-  padding: 1rem;
   cursor: pointer;
+  padding: 1rem 1rem 1rem 1rem;
 
   &:hover {
     background-color: blanchedalmond;
+  }
+
+  &-title {
+    min-height: 3rem;
+    display: -webkit-box;
+    max-width: 500px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &-description {
+    min-height: 4.6rem;
+    display: -webkit-box;
+    max-width: 600px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
   }
 }
 
@@ -24,7 +42,7 @@
   background-color: rgb(0, 128, 0);
   color: white;
   .exercise-data,
-  .description {
+  .exercise-item-description {
     display: none;
   }
 
@@ -36,4 +54,123 @@
 .exercise-data {
   font-size: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 1980px) {
+  .exercise-item {
+    padding: 1rem 5rem 1rem 1rem;
+    width: 21%;
+
+    &-title {
+      max-width: 250px;
+    }
+
+    &-description {
+      max-width: 250px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .exercise-item {
+    width: 32%;
+    margin-right: 2rem;
+
+    &-title {
+      max-width: 950px;
+    }
+
+    &-description {
+      max-width: 950px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .exercise-item {
+    width: 18%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    &-title {
+      max-width: 850px;
+    }
+
+    &-description {
+      max-width: 850px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .exercise-item {
+    width: 30%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    &-title {
+      max-width: 800px;
+    }
+
+    &-description {
+      max-width: 800px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .exercise-item {
+    width: 68%;
+
+    &-title {
+      max-width: 600px;
+    }
+
+    &-description {
+      max-width: 600px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .exercise-item {
+    width: 86%;
+    padding: 1rem 0 1rem 1rem;
+
+    &-title {
+      max-width: 300px;
+    }
+
+    &-description {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .exercise-item {
+    width: 88%;
+
+    &-title {
+      max-width: 250px;
+    }
+
+    &-description {
+      max-width: 250px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .exercise-item {
+    width: 86%;
+
+    &-title {
+      max-width: 190px;
+    }
+
+    &-description {
+      max-width: 190px;
+    }
+  }
 }

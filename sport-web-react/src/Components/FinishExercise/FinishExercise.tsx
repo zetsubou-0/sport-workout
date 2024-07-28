@@ -6,5 +6,8 @@ type ExerciseState = {
 }
 
 export function FinishExercise() {
-    return <div className={"finish-exercise"}></div>
+    const className ='finish-exercise'
+    return <div className={className}>
+        <button className={`${className}-button`}>Finish</button>
+    </div>
 }

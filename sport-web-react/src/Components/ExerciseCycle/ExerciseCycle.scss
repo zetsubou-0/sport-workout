@@ -1,5 +1,5 @@
 .exercise-cycle {
-  max-width: 87rem;
+  max-width: 118rem;
   margin: 0.5rem 0.5rem 1.5rem;
   background-color: burlywood;
   border: 0.2rem solid black;
@@ -8,5 +8,17 @@
 
   &-repeat-count {
     margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1980px) {
+  .exercise-cycle-block {
+    max-width: 87rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .exercise-cycle-block {
+    padding-left: 0.5rem;
   }
 }

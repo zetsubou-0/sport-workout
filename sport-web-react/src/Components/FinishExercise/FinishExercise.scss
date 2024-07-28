@@ -1,0 +1,20 @@
+.finish-exercise {
+  margin: 2rem;
+
+  &-button {
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    min-height: 6rem;
+    min-width: 20rem;
+    color: white;
+    font-size: 40px;
+    background-color: rgb(0, 128, 0);
+    border: 0.2rem solid black;
+    border-radius: 5rem;
+
+    &:hover {
+      background-color: rgb(0, 148, 0);
+    }
+  }
+}

@@ -30,8 +30,8 @@ export function ExerciseItem({item}) {
 
     return <li className={elClass} onClick={handleExerciseItem}>
         <div className="exercise-item-container">
-            <h4 className="title">{item.title} {muscleGroups}<br/><br/><span
-                className="description">{item.description}</span></h4>
+            <h4 className="exercise-item-title">{item.title} {muscleGroups}</h4>
+            <div className="exercise-item-description">{item.description}</div>
             {dataRowsInfo.map(({data, text}) => {
                 if (data) {
                     return (<div className={`exercise-data ${hiddenClass}`}>{text}: {data}</div>)

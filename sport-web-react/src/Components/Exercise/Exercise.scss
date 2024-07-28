@@ -8,9 +8,47 @@ h1 {
 }
 
 .exercise-items-block {
-  max-width: 1600px;
   list-style: none;
 }
 
+.Exercise {
+  margin: auto;
+  max-width: 1900px;
+}
 
+@media (max-width: 1980px) {
+  .Exercise {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Exercise {
+    max-width: 992px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Exercise {
+    max-width: 767px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Exercise {
+    max-width: 600px;
+  }
+
+  .exercise-items-block {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .exercise-items-block {
+    margin-left: 1.6rem;
+    padding: 0;
+  }
+}
 
