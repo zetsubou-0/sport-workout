@@ -1,3 +1,4 @@
+import React from 'react'
 import "./FinishExercise.scss"
 
 type ExerciseState = {

@@ -1,5 +1,6 @@
+import React from 'react'
 import './ExerciseItem.scss'
-import uiService from "../../Services/UIService.tsx";
+import uiService from "../../Services/UIService";
 import {useState} from "react";
 
 export function ExerciseItem({item}) {

@@ -1,5 +1,6 @@
-import {ExerciseCycle} from "../ExerciseCycle/ExerciseCycle.tsx";
-import {ExerciseItem} from "../ExerciseItem/ExerciseItem.tsx";
+import React from 'react'
+import {ExerciseCycle} from "../ExerciseCycle/ExerciseCycle";
+import {ExerciseItem} from "../ExerciseItem/ExerciseItem";
 
 export function ExerciseBlock({item}) {
     if (item?.cycle?.length) {

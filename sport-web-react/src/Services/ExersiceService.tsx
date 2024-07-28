@@ -1,4 +1,5 @@
-import restService, {RequestType} from "./RestService.tsx";
+import React from 'react'
+import restService, {RequestType} from "./RestService";
 
 export interface IExerciseData {
     title?: string

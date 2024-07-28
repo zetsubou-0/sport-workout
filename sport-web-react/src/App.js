@@ -1,4 +1,4 @@
-import {Exercise} from "./Components/Exercise/Exercise.tsx";
+import {Exercise} from "./Components/Exercise/Exercise";
 
 function App() {
   return (

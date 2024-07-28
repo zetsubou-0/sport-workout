@@ -1,9 +1,10 @@
+import React from 'react'
 import "./Exercise.scss"
-import exerciseService, {IExerciseData} from "../../Services/ExersiceService.tsx";
-import restService from "../../Services/RestService.tsx";
+import exerciseService, {IExerciseData} from "../../Services/ExersiceService";
+import restService from "../../Services/RestService";
 import {useEffect, useState} from "react";
-import {ExerciseBlock} from "../ExerciseBlock/ExerciseBlock.tsx";
-import {FinishExercise} from "../FinishExercise/FinishExercise.tsx";
+import {ExerciseBlock} from "../ExerciseBlock/ExerciseBlock";
+import {FinishExercise} from "../FinishExercise/FinishExercise";
 
 export function Exercise() {
     const [exercise, setExercise] = useState(null as IExerciseData)
