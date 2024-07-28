@@ -21,10 +21,6 @@ class ExerciseService {
         return await restService.perform(`exercises/${name}.json?counter=${counter}`, RequestType.get)
             .then(response => response as IExerciseData)
     }
-
-    getSearchParam(key: string): string {
-        return new URLSearchParams(document.location.search).get(key)
-    }
 }
 
 const exerciseService = new ExerciseService()

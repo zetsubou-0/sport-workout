@@ -13,6 +13,11 @@ class RestService {
             .then(response => response.json())
     }
 
+    getSearchParam(key: string): string {
+        return new URLSearchParams(document.location.search).get(key)
+    }
+
+
     private buildHeaders(type: RequestType, body?: any) {
         return {
             method: type,
