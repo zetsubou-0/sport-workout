@@ -21,8 +21,8 @@ export function ExerciseItem({item}) {
 
     const dataRowsInfo = [
         {data: item.count, text: 'Count'},
-        {data: item.repeatCount, text: 'Repeat Count'},
-        {data: item.duration, text: 'Duration'},
+        {data: item.repeatCount, text: 'Repeat Count', postfix: 'times'},
+        {data: item.duration, text: 'Duration', postfix: 'sec'},
     ]
 
     const elClass = `exercise-item ${successClass}`
@@ -32,9 +32,9 @@ export function ExerciseItem({item}) {
         <div className="exercise-item-container">
             <h4 className="exercise-item-title">{item.title} {muscleGroups}</h4>
             <div className="exercise-item-description">{item.description}</div>
-            {dataRowsInfo.map(({data, text}) => {
+            {dataRowsInfo.map(({data, text, postfix}) => {
                 if (data) {
-                    return (<div className={`exercise-data ${hiddenClass}`}>{text}: {data}</div>)
+                    return (<div className={`exercise-data ${hiddenClass}`}>{text}: {data} {postfix}</div>)
                 }
             })}
         </div>
