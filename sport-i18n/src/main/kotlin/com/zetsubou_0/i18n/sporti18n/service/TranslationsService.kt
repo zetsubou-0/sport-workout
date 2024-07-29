@@ -30,11 +30,10 @@ class TranslationsService(
 
     fun uploadTranslations(lang: String, dictionary: String, content: ByteArray) {
         val language = languageRepository.findFirstByLanguage(lang) ?: languageRepository.save(Language(null, lang))
-        var translations = gson.fromJson(
+        val translations = gson.fromJson(
             InputStreamReader(content.inputStream()),
             object : TypeToken<List<UploadedTranslations>>() {},
-        )
-            .map { Translation(null, language, dictionary, it.key, it.value) }
+        ).map { Translation(null, language, dictionary, it.key, it.value) }
         translationRepository.saveAll(translations)
     }
 }
