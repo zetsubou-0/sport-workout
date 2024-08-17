@@ -8,7 +8,7 @@ data class Translation (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "translation_id")
-    val id: Int?,
+    val id: Long?,
     @ManyToOne
     @JoinColumn(name = "language_id", nullable = false)
     val language: Language,

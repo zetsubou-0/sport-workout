@@ -8,7 +8,7 @@ data class Language(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "language_id")
-    val id: Int?,
+    val id: Long?,
     @Column(name = "language_code", nullable = false, unique = true)
     val language: String,
 )
